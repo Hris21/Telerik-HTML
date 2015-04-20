@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Registration Form</title>
+</head>
+<body>
+    <table border="1" style="border-collapse:collapse;">
+        <tbody>
+            <tr>
+                <td style="text-align:center;"><label for="fn"><b>Fist Name</b></label></td>
+                <td colspan="3">
+                    <input type="text" style="display:inline-block;width:300px;" required autofocus id="fn" />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center;"><label for=" ln"><b>Last Name</b></label></td>
+                <td><input type="text" style="display:inline-block;width:300px;" required id="ln" /></td>
+            </tr>
+            <tr>
+                <td style="text-align:center;"><label for=" ad"><b>Address</b></label></td>
+                <td><textarea id="ad" style="display:inline-block;width:300px;height:70px;"></textarea></td>
+            </tr>
+            <tr>
+                <td style="text-align:center;"><label for=" city"><b>City</b></label></td>
+                <td>
+                    <input type="text" style="display:inline-block;width: 170px;" required id="city" />
+                    <label for="state"><b>State</b></label>
+                    <input type="text" style="display:inline-block;width:80px;" id="state" />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center;"><label for=" postal"><b>Zip/Postal Code</b></label></td>
+                <td><input type="number" style="display:inline-block;width:300px;" required id="postal" /></td>
+            </tr>
+            <tr>
+                <td style="text-align:center;"><label for=" country"><b>Country</b></label></td>
+                <td>
+                    <select id="country" style="display:inline-block;width:230px;">
+                        <option value="1" selected>Bulgaria</option>
+                        <option value="2">Australia</option>
+                        <option value="3">Austria</option>
+                        <option value="4">Azerbaijan</option>
+                        <option value="5">Belgium</option>
+                        <option value="6">Bosnia and Herzegovina</option>
+                        <option value="7">Finland</option>
+                        <option value="8">France</option>
+                        <option value="9">Germany</option>
+                        <option value="10">Holland</option>
+                        <option value="11">Italy</option>
+                        <option value="12">Ireland</option>
+                        <option value="13">England</option>
+                        <option value="14">Latvia</option>
+                        <option value="15">Portugal</option>
+                        <option value="16">Spain</option>
+                        <option value="17">United States</option>
+                        <option value="19">Russia</option>
+                        <option value="20">Canada</option>
+                        <option value="21">Japan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">
+                    <label for=" phone">
+                        <b>
+                            Phone(country code,
+                            <br />
+                            area code, number)
+                        </b>
+                    </label>
+
+                </td>
+                <td>
+                    (+<input type="number" id="phone" required style="display:inline-block;width:70px;" />)
+                    <input type="number" style="display:inline-block;width:70px;" required />
+                    <input type="number" style="display:inline-block;width:70px;" required />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center;"><label for=" email"><b>Email</b></label></td>
+                <td>
+                    <input type="text" style="display:inline-block;width:230px;" id="email" required="required" />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">
+                    <label for=" bdate">
+                        <b>Birth date</b>
+                    </label>
+                </td>
+                <td>
+                    <input type="text" style="display:inline-block;width:230px;" required placeholder="дд.мм.гггг г." />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">
+
+                    <label for=" gender" style="text-align:center">
+                        <b>Gender</b>
+                    </label>
+                </td>
+                <td>
+                    <select id="gender" style="display:inline-block;width:50px;">
+                        <option value="1" selected>Male</option>
+                        <option value="2">Female</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">
+                    <label for="startdate">
+                        <b>Starting Date</b>
+                    </label>
+                </td>
+                <td>
+                    Spring 2015 <input type="radio" name="gender" value="Spring 2015" />
+                    Summer 2015
+                    <input type="radio" name="gender" value="Summer 2015" />
+                </td>
+
+            </tr>
+            <tr>
+                <td style="text-align:center;"><label for=" comment"><b>Comment/Questions</b></label></td>
+                <td>
+                    <textarea id="comment" style="display:inline-block;width:300px;height:70px;"></textarea>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot bgcolor="#87cdec">
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit" />
+                    <input type="reset" value="Clean This Form" />
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
